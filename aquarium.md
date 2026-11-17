@@ -20,7 +20,6 @@ There are clients who can simply buy a ticket or request a guided tour or attend
 
 Each exhibit has their own sensors to monitor water temperature, cleanliness, sounds and some videocameras. There is an admin which is an observer of those, and can decide to dispatch caretakers (and how many), close an exhibit or call a vet immediately.
 
-
 ## Actors
 
 - Worker:
@@ -33,6 +32,12 @@ Each exhibit has their own sensors to monitor water temperature, cleanliness, so
 - Exhibit. Each exhibit has their group of animal, and a certain temperature, humidity and cleanliness of water. An exhibit can be under maintenance if there's a major issue. An exhibit has a certain size that is related to how many sensors they have.
   - Enclosure: for amphibious animals.
   - Vat: mainly for aquatic animals.
+
+> **MAYBE** each exhibit has its own ControlPanel, which administers either automatically or manually changes on the thermostat, water pumps or adds chlorine (idk look more into it).
+
+### ControlPanel
+
+The ControlPanel receives readings from the sensors and changes the values of its systems accordingly. it has two modes either autonomous or manual, depending if an admin/maintainer is working with it directly. (could be implemented with a strategy?)
 
 - Factory: Admins (or someone else) can also decide to open up new exhibits given a certain number and type of animals.
 
