@@ -5,6 +5,8 @@ Each exhibit has a number of animals, and a number of sensors.
 
 An Admin has to create a schedule of urgent, recurrent and batch Tasks to administer to the Caretakers.
 The creation of said Tasks is managed by the Admin themselves or when a new Exhibit is open or when an Animal is added.
+Tasks can have Decorators, to add extra steps for the Caretaker to take. For example, when cleaning the Exhibit it can be added to drain the water completely, or, when feeding the animals, it can be added to also give them their medicine (???).
+> Feels a bit forced.
 
 A Caretaker has three lists of Tasks they need to complete (either urgent, recurrent or batch), after selecting one of them they're instructed on what to do (with a Strategy pattern).
 
